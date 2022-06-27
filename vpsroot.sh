@@ -12,7 +12,7 @@
 #usermod -p `perl -e "print crypt("$Pass","Q4")"` $crot;
 #usermod -aG sudo $crot;
 #echo "$crot    ALL=(ALL:ALL) ALL" >> /etc/sudoers;
-wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/sshd_config;
+wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/semesta31/vps-ssh/main/sshd_config;
 systemctl restart sshd;
 clear;
 echo -e "Masukkan Password:";
